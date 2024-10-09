@@ -21,12 +21,13 @@ $( document ).ready(function() {
         }, 800);
         updateHelper(1);
       }
+      
       else if (delta < -50 && canScroll) {
         canScroll = false;
         clearTimeout(scrollController);
         scrollController = setTimeout(function(){
           canScroll = true;
-        }, 800);
+        }, 800); 
         updateHelper(-1);
       }
 
